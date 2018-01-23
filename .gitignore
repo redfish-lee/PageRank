@@ -1,2 +1,6 @@
 # macos
 *.DS_Store
+
+# Java files
+*.jar
+bin/*
