@@ -42,7 +42,7 @@ $ hdfs dfs -getmerge pageRank pagerank.out
 [Wikitext](https://en.wikipedia.org/wiki/Help:Wikitext) is our input format
 The input file on HDFS is a normal text file in wikitext format with multiple lines. Each line contains one page which is enclosed in `<page>` and `</page>`. There are only two attributes we need to consider: **page title** and **page links**
 
-##### Page title
+#### Page title
 - Placed between `<title>` and `</title>`. 
 - The first character of a title is always in upper case.
 - Since title is part of an XML text, the real title text need to be un-escaped as follows:
@@ -56,7 +56,7 @@ The input file on HDFS is a normal text file in wikitext format with multiple li
 |&apos; | ' | 
 - For example, the title string **`Ulmus &apos;Nire-keyaki&apos;`** need to be converted to **`Ulmus 'Nire-keyaki'`**.
 
-##### link
+#### link
 - Placed between `[[` and `]]`, which defines what page it points to and the shown text of the link.
 - To simplify the processing and be more specific, we define a link to another page as follows:
     - `[[` means what follows is a target page title.
