@@ -11,14 +11,13 @@ PageRank (PR) is an algorithm used by Google Search to rank websites in their se
 - Hadoop MapReduce: A YARN-based system for parallel processing of large data sets.
 
 <center>
-    <img src="http://social.technet.microsoft.com/wiki/cfs-filesystemfile.ashx/__key/communityserver-components-imagefileviewer/communityserver-wikis-components-files-00-00-00-00-05/7848.TheHadoopEcosystem.png_2D00_550x0.png"
-    title="An overview of Hadoop Distributed File System" >
+    <img src="http://social.technet.microsoft.com/wiki/cfs-filesystemfile.ashx/__key/communityserver-components-imagefileviewer/communityserver-wikis-components-files-00-00-00-00-05/7848.TheHadoopEcosystem.png_2D00_550x0.png">
 </center>
 
 #### MapReduce
 A MapReduce program is composed of a `Map()` method that performs filtering and sorting and a `Reduce()` method that performs a summary operation. Each mapper and reducer may execute on different nodes, so what each mapper and reducer would get should be implemented by programmer.
 example:
-[source](https://sundar5.files.wordpress.com/2010/03/mapreduce-e1269190940722.png)
+![source](https://sundar5.files.wordpress.com/2010/03/mapreduce-e1269190940722.png)
 - `mapper` write data in `<key, value>` format to context.
 - `partitioner` decide how to partition different keys to which reducers.
 - `reducer` get multiple key and their grouped values in iterable type.
