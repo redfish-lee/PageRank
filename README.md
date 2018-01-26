@@ -95,8 +95,7 @@ The input file on HDFS is a normal text file in wikitext format with multiple li
 6 directories, 15 files
 ```
 ### Page Rank Equation
-$$\LARGE PR(x) = (1 - \alpha)(\frac{1}{N} ) +\alpha \sum_{i=1}^{n}\frac{PR(t_i)}{C(t_i)} + \alpha \sum_{j=1}^{m} \frac{PR(d_j)}{N}$$
-
+<img src="https://latex.codecogs.com/png.latex?\dpi{200}&space;\fn_cm&space;$$\LARGE&space;PR(x)&space;=&space;(1&space;-&space;\alpha)(\frac{1}{N}&space;)&space;&plus;\alpha&space;\sum_{i=1}^{n}\frac{PR(t_i)}{C(t_i)}&space;&plus;&space;\alpha&space;\sum_{j=1}^{m}&space;\frac{PR(d_j)}{N}$$" title="$$\LARGE PR(x) = (1 - \alpha)(\frac{1}{N} ) +\alpha \sum_{i=1}^{n}\frac{PR(t_i)}{C(t_i)} + \alpha \sum_{j=1}^{m} \frac{PR(d_j)}{N}$$" />
 - α: damping factor
 - N: number of total pages
 - n: number of pages points to *`x`*
